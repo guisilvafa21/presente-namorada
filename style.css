@@ -3,7 +3,9 @@ body{
 margin:0;
 font-family:'Poppins',sans-serif;
 
-background: linear-gradient(135deg,#ff4e88,#ff9ab3);
+background: linear-gradient(135deg,#ff4e88,#ff6fa5,#ff9ab3);
+background-size:400% 400%;
+animation:fundo 10s ease infinite;
 
 min-height:100vh;
 
@@ -18,22 +20,25 @@ overflow:hidden;
 
 }
 
+@keyframes fundo{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
 .container{
 max-width:420px;
 padding:20px;
 }
 
 .titulo{
-
 font-family:'Great Vibes',cursive;
-font-size:40px;
-margin-bottom:20px;
-
+font-size:38px;
 }
 
 .gift{
 
-font-size:80px;
+font-size:90px;
 cursor:pointer;
 transition:0.4s;
 
@@ -80,11 +85,9 @@ display:none;
 }
 
 .carta{
-
 margin-top:25px;
 font-size:18px;
 line-height:1.6;
-
 }
 
 .heart{
@@ -104,22 +107,6 @@ opacity:1;
 100%{
 transform:translateY(110vh);
 opacity:0;
-}
-
-}
-
-@media(max-width:500px){
-
-.titulo{
-font-size:34px;
-}
-
-.mensagem{
-font-size:18px;
-}
-
-.carta{
-font-size:16px;
 }
 
 }
