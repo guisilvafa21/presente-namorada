@@ -101,26 +101,6 @@ transform:scale(1);
 
 }
 
-.textoFoto{
-
-position:absolute;
-
-top:10px;
-left:10px;
-right:10px;
-
-font-size:18px;
-
-background:rgba(0,0,0,0.45);
-
-padding:8px;
-
-border-radius:10px;
-
-z-index:10;
-
-}
-
 .carta{
 
 margin-top:25px;
