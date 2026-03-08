@@ -1,4 +1,3 @@
-003"}
 function abrirPresente(){
 
 document.querySelector(".gift").style.display="none"
@@ -27,16 +26,14 @@ heart.className="heart"
 
 heart.innerHTML="❤️"
 
-heart.style.left=Math.random()100+"vw"
+heart.style.left=Math.random()*100+"vw"
 
-heart.style.fontSize=(Math.random()25+15)+"px"
+heart.style.fontSize=(Math.random()*25+15)+"px"
 
 document.body.appendChild(heart)
 
 setTimeout(()=>{
-
 heart.remove()
-
 },6000)
 
 },300)
@@ -50,17 +47,13 @@ function mostrarSlides(){
 let slides=document.getElementsByClassName("slide")
 
 for(let i=0;i<slides.length;i++){
-
 slides[i].style.display="none"
-
 }
 
 slideIndex++
 
 if(slideIndex>slides.length){
-
 slideIndex=1
-
 }
 
 slides[slideIndex-1].style.display="block"
@@ -105,10 +98,10 @@ let agora=new Date()
 
 let diff=agora-inicio
 
-let dias=Math.floor(diff/(10006060*24))
+let dias=Math.floor(diff/(1000*60*60*24))
 
 document.getElementById("tempo").innerText=dias+" dias"
 
-},1
-}
+},1000)
+
 }
