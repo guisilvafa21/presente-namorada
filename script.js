@@ -66,7 +66,7 @@ setTimeout(mostrarSlides,3500)
 
 function iniciarCarta(){
 
-let texto="Desde que você entrou na minha vida tudo ficou mais bonito. Seu sorriso ilumina meus dias e sua presença transforma qualquer momento em algo especial. Sou muito grato por ter você comigo. Feliz Dia da Mulher ❤️"
+let texto="Desde que você entrou na minha vida tudo ficou mais bonito. Seu sorriso ilumina meus dias e sua presença transforma qualquer momento em algo especial. Sou muito grato por ter você comigo ❤️"
 
 let i=0
 
