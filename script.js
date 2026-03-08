@@ -1,6 +1,10 @@
+const gift = document.getElementById("gift")
+
+gift.addEventListener("click", abrirPresente)
+
 function abrirPresente(){
 
-document.querySelector(".gift").style.display="none"
+gift.style.display="none"
 
 document.getElementById("conteudo").classList.remove("hidden")
 
@@ -64,11 +68,9 @@ setTimeout(mostrarSlides,3000)
 
 function iniciarCarta(){
 
-let texto="Desde que você entrou na minha vida tudo ficou mais bonito. Seu sorriso ilumina meus dias e sua presença transforma qualquer momento em algo especial. Eu sou muito grato por ter você comigo. Feliz Dia da Mulher, meu amor ❤️"
+let texto="Desde que você entrou na minha vida tudo ficou mais bonito. Seu sorriso ilumina meus dias e sua presença transforma qualquer momento em algo especial. Sou muito grato por ter você comigo. Feliz Dia da Mulher ❤️"
 
 let i=0
-
-let velocidade=50
 
 function escrever(){
 
@@ -78,7 +80,7 @@ document.getElementById("textoCarta").innerHTML+=texto.charAt(i)
 
 i++
 
-setTimeout(escrever,velocidade)
+setTimeout(escrever,40)
 
 }
 
