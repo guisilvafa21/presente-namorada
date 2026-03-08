@@ -16,8 +16,6 @@ mostrarSlides()
 
 iniciarCarta()
 
-contadorTempo()
-
 }
 
 function criarCoracoes(){
@@ -62,7 +60,7 @@ slideIndex=1
 
 slides[slideIndex-1].style.display="block"
 
-setTimeout(mostrarSlides,3000)
+setTimeout(mostrarSlides,3500)
 
 }
 
@@ -87,23 +85,5 @@ setTimeout(escrever,40)
 }
 
 escrever()
-
-}
-
-function contadorTempo(){
-
-let inicio=new Date("2023-01-01")
-
-setInterval(()=>{
-
-let agora=new Date()
-
-let diff=agora-inicio
-
-let dias=Math.floor(diff/(1000*60*60*24))
-
-document.getElementById("tempo").innerText=dias+" dias"
-
-},1000)
 
 }
